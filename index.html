@@ -2,14 +2,84 @@
 <html>
 <head>
     <title>DICOR</title>
+    <!-- etiqueta para armar una tabla ordenada-->
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
 </head>
 <body>
+
+    <table style="width: 500px;">
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Producto 1</td>
+                <td>$ 100</td>
+            </tr>
+            <tr>
+                <td>Producto 2</td>
+                <td>$ 200</td>
+            </tr>
+            <tr>
+                <td>Producto 3</td>
+                <td>$ 300</td>
+            </tr>
+            <tr>
+                <td>Producto 4</td>
+                <td>$ 400</td>
+            </tr>
+            <tr>
+                <td>Producto 5</td>
+                <td>$ 500</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td></td>
+            <td>Total: $ 1500</td>
+        </tfoot>
+    </table>
+
+    <!-- ul es una lista no ordenada-->
+    <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+        <li>Elemento 5</li>
+    </ul>
+
+    <!-- ol es una lista ordenada-->   
+    <ol>
+        <li value="50">Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+        <li>Elemento 5</li>
+        <li>
+            <ol>
+                <li style="list-style-type: lower-alpha;">Sub elemento 1</li>
+                <li style="list-style-type: lower-alpha;">Sub elemento 2</li>
+                <li style="list-style-type: lower-alpha;">Sub elemento 3</li>
+                <li style="list-style-type: lower-alpha;">Sub elemento 4</li>
+                <li style="list-style-type: lower-alpha;">Sub elemento 5</li>
+        </li>
+    </ol>
+
+
+
     <form action="/formulario" method="post">
         <label for="Nombre">Nombre</label>
-        <input value="nombre" type="text" id="Nombre" name="Nombre" placeholder="Ingrese su nombre.." />
+        <input  type="text" id="Nombre" name="Nombre" placeholder="Ingrese su nombre.." />
         <br>
         <label for="Apellido">Apellido</label>
-        <input value="apellido" type="text" id="apellido" name="apellido" placeholder="Ingrese su apellido.." />
+        <input  type="text" id="apellido" name="apellido" placeholder="Ingrese su apellido.." />
         <br>
         <br>
         <label for="comentario">Comentario</label>
