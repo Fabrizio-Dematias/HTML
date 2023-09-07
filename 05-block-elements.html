@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<!-- (Ejemplo) 05-Block-elements.html -->
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="author" content="Gustavo Funes">
+    <meta name="description" content="Página de ejemplo para mostrar la implementación de los elementos de Bloque en HTML">
+    <meta name="keywords" content="HTML, estructura de una pagina HTML, p, address, blockquote, pre, br, hr, div">
+    <title>05.Block elements</title>
+    <style>
+        div {
+            color: darkolivegreen;
+            
+        }
+        h1, h2, h3, h4{
+            color: firebrick;
+        }
+        #container-header {
+            background-color: coral;
+                }
+        #container-main {
+            background-color: blue;
+                    
+        }
+        #container-central {
+            /* background-color: burlywood; */
+            width: 60%;
+            float: left;
+        }
+        #container-aside {
+            background-color:orange;
+            width: 40%;
+            float: right;
+        }
+        #container-footer {
+            background-color:lightgray;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+<div id="container-header">
+    <header>
+        <h1 tabindex="1">Información de Harry Potter</h1>
+        <nav tabindex="2">Sinopsis | Novelas | Protagonistas | Otras publicaciones | Logros</nav>
+    </header>
+</div>
+<div id="container-main">
+    <main>
+    <div id="container-central">
+    <section>
+        <section>
+            <h2>Sinopsis</h2>
+            <article> 
+                <h3>Resumen</h3>
+                <p>
+                    La historia comienza con la celebración del mundo mágico. Durante muchos años, había sido aterrorizado por el malvado mago Lord Voldemort. La noche del 31 de octubre, mató a Lily y James Potter. Sin embargo, cuando intenta matar a su hijo de 1 año, Harry, la maldición asesina avada kedavra se vuelve sobre sí mismo. El cuerpo de Voldemort resulta destruido, pero él sobrevive: no está muerto ni vivo. Por su parte, a Harry solo le queda una cicatriz con forma de rayo en la frente que es el único remanente físico de la maldición de Voldemort. Harry es el único sobreviviente de la maldición asesina, y a raíz de la misteriosa derrota de Voldemort, el mundo mágico empieza a llamarlo como «el niño que sobrevivió».
+                </p>
+            </article>
+            <article>
+                <h3>Introducción</h3>
+                <p>
+                    El 1 de noviembre, Rubeus Hagrid, un semi-gigante, deja a Harry con los únicos parientes que le quedan, los crueles Dursley. Estos son su tío Vernon, su tía Petunia y Dudley, su primo malcriado. Ellos intentarán en vano esconder su herencia mágica (por ejemplo, al decirle que sus padres murieron en un accidente de tráfico, o castigándolo severamente después de cualquier comportamiento extraño). Sin embargo, la víspera de su undécimo cumpleaños, Harry tiene su primer contacto con el mundo mágico cuando recibe cartas del Colegio Hogwarts de Magia y Hechicería, las cuales eran entregadas por lechuzas, aunque su tío impide que pueda leerlas. Ya en su cumpleaños, Hagrid aparece y le dice a Harry que existe un mundo mágico y otro «muggle» , puesto que él es un mago, ha sido invitado a asistir al colegio.
+                </p>
+            </article>
+        </section>
+        <hr>
+        <section>
+            <h2>Novelas</h2>
+            <article>
+                <h3>Harry Potter y la piedra filosofal</h3>
+                <p>
+                    Harry Potter y la piedra filosofal (Harry Potter and the Philosopher's Stone) es el primer libro de la serie, fue publicado en Reino Unido el 26 de junio de 1997 y en español en marzo de 1999. Se trata de uno de los libros más vendidos de la historia, las estimaciones de sus ventas mundiales superan los 110 millones de copias. En la primavera de 2007, una primera edición firmada por Rowling fue subastada en Londres por 27 876 libras esterlinas.
+                    <br><br>
+                    En esta primera obra se introducen la mayoría de los personajes principales de la serie, así como muchos de los lugares donde se desarrollará la acción. Se narran los primeros pasos de Harry en el mundo de la magia, así como su primer enfrentamiento con Voldemort, quien en su búsqueda de la inmortalidad quiere obtener el poder de la piedra filosofal.
+                </p>
+            </article>
+            <article>
+                <h3>Harry Potter y la cámara secreta</h3>
+                <p>
+                    Harry Potter y la cámara secreta (Harry Potter and the Chamber of Secrets) fue publicado originalmente el 2 de julio de 1998, y en español en octubre de 1999. Muchos de los elementos del primer boceto de este libro fueron eliminados tanto por su autora como por el editor. Además, el libro tiene una importante relación temática con el sexto libro. Mucha de la información que iba a ser revelada en este tomo fue desplazada a la sexta entrega. Como consecuencia de esto, muchos de los elementos que aparecen en una forma cotidiana en La cámara secreta aparecen nuevamente en El misterio del príncipe con su verdadera relevancia.
+                    <br><br>
+                    El libro relata el segundo año de Harry en Hogwarts. Un día un elfo llamado Dobby vino a casa de Harry para avisarle de que Hogwarts corría un grave peligro. Más tarde su amigo Ron, le recogerá en un coche volador y así empieza su curso en Hogwarts durante el cual aparecen mensajes en las paredes de los pasillos de la escuela que advierten que la Cámara de los Secretos ha sido abierta, seguidos de una serie de ataques a alumnos que no provienen de familias con sangre mágica. En esta entrega introducen la figura del elfo doméstico y personajes relevantes para el resto de la serie, como Lucius Malfoy, Ginny Weasley y Arthur Weasley, además de revelar un poco más del pasado de Voldemort a través de su diario personal.    
+                </p>
+            </article>
+            <article>
+                <h3>Harry Potter y el prisionero de Azkaban</h3>
+                <p>
+                    Harry Potter y el prisionero de Azkaban (Harry Potter and the Prisoner of Azkaban) fue publicado en inglés el 8 de julio de 1999, mientras que en español lo hizo en abril de 2000.10​ Este fue el libro que más rápido escribió Rowling, pues lo terminó en tan solo un año después de comenzar a escribirlo. Fue además acreedor del Premio Costa y del Premio Bram Stoker, entre otros, que lo ubican como uno de los libros fantásticos más laureados de los últimos años.
+                    <br><br>
+                    En esta oportunidad se introducen la figura del dementor y los personajes de Remus Lupin y Sirius Black, quien al inicio de la novela escapa de la prisión de Azkaban, además de desarrollar la historia de los padres de Harry. Es el único libro de la serie en el que no aparece Voldemort.
+                </p>
+            </article>
+        </section>
+        <hr>
+        <section>
+            <h2>Protagonistas</h2>
+            <article>
+                <h3>Harry Potter</h3>
+            </article>
+            <article>
+                <h3>Ron Weasley</h3>
+            </article>
+            <article>
+                <h3>Hermione Granger</h3>
+            </article>
+        </section>
+        <hr>
+        <section>
+            <h2>Otras publicaciones</h2>
+            <article>
+                <h3>Animales fantásticos y dónde encontrarlos</h3>
+            </article>
+            <article>
+                <h3>Quidditch a través de los tiempos</h3>
+            </article>
+            <article>
+                <h3>Los cuentos de Beedle el Bardo</h3>
+            </article>
+            <article>
+                <h3>Hogwarts: una guía incompleta y poco fiable</h3>
+            </article>
+        </section>
+        <hr>
+        <section>
+            <h2>logros</h2>
+            <article>
+                <h3>Impacto cultural</h3>
+            </article>
+            <article>
+                <h3>Éxito comercial</h3>
+            </article>
+        </section>
+        <hr>
+    </section>
+    </div>
+    <div id="container-aside">
+        <aside>
+            <article>
+                <h3>Autora: J. K. Rowling</h3>
+                <p>
+                    Joanne Rowling​ (Yate, 31 de julio de 1965), quien escribe bajo los seudónimos J. K. Rowling y Robert Galbraith, es una escritora, productora de cine y guionista británica, conocida por ser la autora de la serie de libros Harry Potter, que han superado los quinientos millones de ejemplares vendidos.
+                    <address>Killiechassie (Perth and Kinross), Escocia</address>
+                </p>
+                <h4>Rowling dijo:</h4>
+                <p>
+                    <blockquote title="Cita a la fuente de la escritora J.K.Rowling" cite="https://es.wikipedia.org/wiki/J._K._Rowling">«De repente, la idea de Harry apareció en mi imaginación, simplemente. No puedo decir por qué, o qué la desencadenó, pero vi la idea de Harry y de la escuela de magos muy claramente. De pronto, tuve la idea básica de un niño que no sabía quién era, que no sabía que era mago hasta que recibió una invitación para asistir a una escuela de magia. No he estado nunca tan entusiasmada con una idea»</blockquote>
+                </p>
+            </article>
+            <article>
+                <small>
+                <pre>
+«Comenzó con Harry, 
+y luego todos los personajes y situaciones afloraron en mi cabeza».
+Cuando llegó a su apartamento de Clapham Junction, 
+comenzó a escribir inmediatamente. 
+Ese mismo año murió su madre. 
+Fue un golpe muy duro para ella, 
+porque era la única persona que la apoyaba en sus ideas de ser escritora, 
+tras luchar durante diez años contra una esclerosis múltiple.​ 
+Rowling comentó «Estaba escribiendo Harry Potter en el momento en que mi madre murió. 
+Jamás pude hablarle sobre Harry Potter».
+                </pre>
+                </small>
+            </article>
+        </aside>
+    </div>
+    </main>
+</div>
+<div id="container-footer">
+    <footer>
+        <h6>
+            Fuente: Wikipedia. https://es.wikipedia.org/wiki/Harry_Potter
+        </h6>
+    </footer>
+</div>
+</body>
+</html>

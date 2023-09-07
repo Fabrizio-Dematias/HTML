@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!-- (Ejemplo) 11-images-V2.html -->
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11-Images-V2</title>
+    <meta name="author" content="Gustavo Funes">
+    <meta name="description" content="Página de ejemplo para mostrar la implementación de imágenes en HTML">
+    <meta name="keywords" content="HTML, estructura de una pagina HTML, img, figure, figcaption">
+    <style>
+        section{
+            width: 80%;
+            margin: auto;
+        }
+        #JPG{
+            background-color: lightpink;
+            float: left;
+        }
+        #PNG{
+            background-color: lightskyblue;
+            float: right;
+        }
+        #GIF{
+            background-color: rgb(253, 182, 255);
+            float: left;
+        }
+        #SVG{
+            background-color: rgb(186, 187, 184);
+            float: right;
+        }
+        #separator{
+            clear: both;
+        }
+        div{
+            margin: 20px;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mosaico de tipos de imágenes</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Tipos de imágenes: JPG, PNG, GIF, SVG</h2>
+            <div id="JPG">
+                <figure>
+                    <img src="./assets/img/foto-bote-atardecer.jpeg" alt="Foto de los protragonistas de Harry Potter" width="500">
+                    <figcaption>Tipo de imagen: JPG<br>Tamaño: 7.1 MB</figcaption>
+                </figure>
+            </div>
+            <div id="PNG">
+                <figure>
+                    <img src="./assets/img/transparente-harry-potter-protagonistas-2.png" alt="Foto con transparencia de los protragonistas de Harry Potter" width="500">
+                    <figcaption>Tipo de imagen:PNG<br>Tamaño: 356 KB</figcaption>
+                </figure>
+            </div>
+            <div id="separator">
+                <hr>
+            </div>
+            <div id="GIF">
+                <figure>
+                    <img src="./assets/img/animacion-harry-potter-protagonistas.gif" alt="Foto con animación de los protragonistas de Harry Potter" width="500">
+                    <figcaption>Tipo de imagen:GIF<br>Tamaño: 506 KB</figcaption>
+                </figure>
+            </div>
+            <div id="SVG">
+                <figure>
+                    <img src="./assets/img/dibujo-harry-potter.svg" alt="Foto con dibujo de los protagonistas de Harry Potter." width="500">
+                    <figcaption>Tipo de imagen:SVG<br>Tamaño: 21 KB</figcaption>
+                </figure>   
+            </div>
+        </section>
+        <div id="separator">
+            <hr>
+        </div>
+        <section>
+            <h2>Comparación con WEBP</h2>
+            <div id="JPG">
+                <figure>
+                    <img src="./assets/img/foto-bote-atardecer.webp" alt="Foto de los protragonistas de Harry Potter" width="500">
+                    <figcaption>Tipo de imagen: WebP (de JPG)<br>Tamaño: 1.8 KB</figcaption>
+                </figure>
+            </div>
+            <div id="PNG">
+                <figure>
+                    <img src="./assets/img/transparente-harry-potter-protagonistas-2.webp" alt="Foto con transparencia de los protragonistas de Harry Potter" width="500">
+                    <figcaption>Tipo de imagen: WebP (de PNG)<br>Tamaño: 70 KB</figcaption>
+                </figure>
+            </div>
+            <div id="separator">
+                <hr>
+            </div>
+            <div id="GIF">
+                <figure>
+                    <img src="./assets/img/animacion-harry-potter-protagonistas.webp" alt="Foto con animación de los protragonistas de Harry Potter" width="500">
+                    <figcaption>Tipo de imagen:WebP (de GIF)<br>Tamaño: 412 KB</figcaption>
+                </figure>
+            </div>
+            <div id="SVG">
+                <figure>
+                    <img src="./assets/img/dibujo-harry-potter.webp" alt="Foto con dibujo de los protagonistas de Harry Potter." width="500">
+                    <figcaption>Tipo de imagen:WebP (de SVG)<br>Tamaño: 98 KB</figcaption>
+                </figure>   
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    
+</body>
+</html>

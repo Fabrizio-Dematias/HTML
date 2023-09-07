@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!-- (Ejemplo) 09-Tables.html -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gustavo Funes">
+    <meta name="description" content="Página de ejemplo para mostrar la implementación de tablas en HTML">
+    <meta name="keywords" content="HTML, estructura de una pagina HTML, table, caption, thead, tbody, tfoot, tr, th, td">
+    <title>09-Tables</title>
+    <style>
+        table {
+            width: 50%;
+        }
+        table, th, tr, td {
+            border: 1px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <table>
+            <caption id=”title-horario”><strong>HORARIO DE CLASES</strong></caption>
+            <thead>
+                <tr>
+                    <th scope=”col”></th>
+                    <th scope=”col”>LUNES</th>
+                    <th scope=”col”>MARTES</th>
+                    <th scope=”col”>MIERCOLES</th>
+                    <th scope=”col”>JUEVES</th>
+                    <th scope=”col”>VIERNES</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope=”row”>HORA 1</th>
+                    <td>Materia 1</td>
+                    <td>Materia 2</td>
+                    <td>Materia 2</td>
+                    <td>Materia 3</td>
+                    <td>Materia 4</td>
+                </tr>
+                <tr>
+                    <th scope=”row”>HORA 2</th>
+                    <td colspan="3">Materia 5</td>
+                    <td colspan="2">Materia 3</td>
+                </tr>
+                <tr>
+                    <th scope=”row”>HORA 3</th>
+                    <td rowspan=”2″> Materia 4</td>
+                    <td rowspan=”2″>Materia 1</td>
+                    <td rowspan=”2″>Materia 5</td>
+                    <td rowspan=”2″>Materia 5</td>
+                    <td rowspan=”2″>Materia 5</td>
+                </tr>
+                <tr>
+                    <th scope=”row”>HORA 4</th>
+                    <td rowspan=”2″> Materia 4</td>
+                    <td rowspan=”2″>Materia 1</td>
+                    <td rowspan=”2″>Materia 5</td>
+                    <td rowspan=”2″>Materia 5</td>
+                    <td rowspan=”2″>Materia 5</td>
+                </tr>
+                <tr>
+                    <th scope=”row”>HORA 5</th>
+                    <td rowspan=”2″>Materia 3 </td>
+                    <td rowspan=”2″>Materia 4</td>
+                    <td rowspan=”2″>Materia 1</td>
+                    <td rowspan=”2″>Materia 2</td>
+                    <td rowspan=”2″>Materia 2</td>
+                </tr>
+                <tr>
+                    <th scope=”row”>HORA 6</th>
+                    <td colspan="2">Materia 3</td>
+                    <td colspan="3">Materia 5</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <th scope=”row”>ALUMNO:</th>
+                <td colspan="5">Nombre y Apellido</td>
+            </tfoot>
+        </table>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

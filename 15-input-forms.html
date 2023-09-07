@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página de ejemplo para mostrar la implementación de formularios en HTML">
+    <meta name="keywords" content="HTML, estructura de una pagina HTML, forms, fieldset, legend, label, input, button, datalist, select, textarea">
+    <title>15-input-forms</title>
+    <style type="text/css">
+        legend{
+            font-weight: bold;
+        }
+        input {
+            margin-top: 10px;
+        }
+        ul{
+            list-style-type:none;
+        }
+        /* li{
+            border: solid 1px;
+        } */
+        input[type="radio"], input[type="checkbox"]{
+            vertical-align:middle;
+            margin-top: 0px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>
+            Ficha de ingreso
+        </h1>
+    </header>
+    <main>
+        <form action="">
+            <fieldset>
+                <legend>
+                    Datos personales
+                </legend>
+                <ol>
+                    <li>
+                        <label for="name">Nombre:</label>
+                        <input id="name" type="text" required autofocus>
+                        <label for="surname">Apellido:</label>
+                        <input id="surname" type="text" required>
+                    </li>
+                    <li>
+                        <label for="birth">Nacimiento:</label>
+                        <input id="birth" type="date" min="1950-01-01" max="2010-12-31" value="1950-01-01">
+                    </li>
+                    <li>
+                        <label for="dni">DNI:</label>
+                        <input id="dni" type="number" placeholder="Sólo escriba números" minlength="7">
+                    </li>
+                    <li>
+                        <label for="phone">Teléfono:</label>
+                        <input id="phone" type="text" placeholder="Su teléfono celular">
+                    </li>
+                    <li>
+                        <label for="email">Email:</label>
+                        <input id="email" type="text" required>
+                    </li>
+                    <li>
+                        <label for="provincia">Provincia donde reside:</label>
+                        <input id="provincia" type="list" list="provincias">
+                        <datalist id="provincias">
+                            <option value="Buenos Aires"></option>
+                            <option value="Catamarca"></option>
+                            <option value="Chaco"></option>
+                            <option value="Chubut"></option>
+                            <option value="Cordoba"></option>
+                            <option value="Corrientes"></option>
+                            <option value="Entre Rios"></option>
+                            <option value="Formosa"></option>
+                            <option value="Jujuy"></option>
+                            <option value="La Pampa"></option>
+                            <option value="La Rioja"></option>
+                            <option value="Mendoza"></option>
+                            <option value="Misiones"></option>
+                            <option value="Neuquen"></option>
+                            <option value="Rio Negro"></option>
+                            <option value="Salta"></option>
+                            <option value="San Juan"></option>
+                            <option value="San Luis"></option>
+                            <option value="Santa Cruz"></option>
+                            <option value="Santa Fe"></option>
+                            <option value="Sgo. del Estero"></option>
+                            <option value="Tierra del Fuego"></option>
+                           <option value="Tucuman"></option>
+                        </datalist>
+                    </li>
+                    <li>
+                        <label for="photo">Ingrese una fotografía de su rostro:</label>
+                        <input id="photo" type="file">
+                    </li>
+                </ol>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    Otras informaciones
+                </legend>
+                <ol start="6">
+                    <li>
+                        <label for="field1">Estado General de Salud:</label>
+                        <span>0</span>
+                        <input id="field1" type="range" step="1" min="0" max="5">
+                        <span>5</span>
+                    </li>
+                    <li>
+                        <label for="web">Web del lugar de trabajo:</label>
+                        <input id="web" type="text">    
+                        <br>
+                    </li>
+                    <li>
+                        <label for="ini-work">Inicio de actividades profesionales</label>
+                        <input id="ini-work" type="month">
+                    </li>
+                    <li>
+                        <label for="in">Hora de ingreso:</label>
+                        <input id="in" type="time">
+                    </li>
+                    <li>
+                        <label for="first-week">Indique la semana en la que tuvos los primeros síntomas</label>
+                        <input id="first-week" type="week">
+                    </li>
+                    <li>
+                        <label for="list-vaccine">Vacuna que recibió por Covid-19:</label>
+                        <ul id="list-vaccine">
+                            <li>
+                                <input id="Astrazeneca" type="radio" name="vaccine" value="Astrazeneca">
+                                <label for="Astrazeneca">Astrazeneca</label>
+                            </li>
+                            <li>
+                                <input id="Sputnik-V" type="radio" name="vaccine" value="Sputnik-V">
+                                <label for="Sputnik-V">Sputnik V</label>
+                            </li>
+                            <li>
+                                <input id="Sinopharm" type="radio" name="vaccine" value="Sinopharm">
+                                <label for="Sinopharm">Sinopharm</label>
+                            </li>
+                            <li>
+                                <input id="Moderna" type="radio" name="vaccine" value="Moderna">
+                                <label for="Moderna">Moderna</label>                    
+                            </li>
+                            <li>
+                                <input id="Pfizer" type="radio" name="vaccine" value="Pfizer">
+                                <label for="Pfizer">Pfizer</label>                    
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <label for="list-symptom">Qué síntomas tiene:</label>
+                        <ul id="list-symptom">
+                            <li>
+                                <input id="fiebre" type="checkbox" name="fiebre" value="fiebre">
+                                <label for="fiebre">Fiebre</label>
+                            </li>
+                            <li>
+                                <input id="Tos" type="checkbox" name="tos" value="Sputnik-V">
+                                <label for="tos-V">Tos</label>
+                            </li>
+                            <li>
+                                <input id="garganta" type="checkbox" name="garganta" value="garganta">
+                                <label for="garganta">Dolor de garganta</label>
+                            </li>
+                            <li>
+                                <input id="cansancio" type="checkbox" name="cansancio" value="cansancio">
+                                <label for="cansancio">Cansancio</label>                    
+                            </li>
+                            <li>
+                                <input id="dolor-cuerpo" type="checkbox" name="dolor-cuerpo" value="dolor-cuerpo">
+                                <label for="dolor-cuerpo">Dolor en el cuerpo</label>                    
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <label for="obra-social">Obra social:</label>
+                        <select id="obra-social" name="obra-social">
+                            <option value="No tiene">No tiene</option>
+                            <optgroup label="Obras sociales">
+                                <option value="APROSS">APROSS</option>
+                                <option value="APROSS">DASPU</option>
+                                <option value="APROSS">OSDOP</option>
+                            </optgroup>
+                            <optgroup label="Prepagas">
+                                <option value="Swiss Medical">Swiss Medical</option>
+                                <option value="OSDE">OSDE</option>
+                                <option value="Medife">Medife</option>
+                                <option value="Sancor">Sancor</option>
+                            </optgroup>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="ambito">Indique donde o con quien estuvo la última semana:</label><br>
+                        <select name="ambito" id="ambito" multiple size="7">
+                            <option value="Hogar" selected>Hogar</option>
+                            <option value="Familia">Familia</option>
+                            <option value="Trabajo">Trabajo</option>
+                            <option value="Club">Club</option>
+                            <option value="Escuela-Universidad">Escuela - Universidad</option>
+                            <option value="Amigos">Amigos</option>
+                            <option value="Fuera">Fuera de la ciudad</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="contactos">Contactos estrechos que ha tenido recientemente:</label>
+                        <br>
+                        <textarea name="" id="contactos" cols="30" rows="10" placeholder="Indique los datos de los contactos estrechos que ha tenido en las últimas 48 hs."></textarea>
+                    </li>
+                </ol>
+            </fieldset>
+            <input type="reset" value="Borrar formulario">
+            <input type="submit" value="Enviar ficha">
+        </form>
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>
