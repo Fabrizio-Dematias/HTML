@@ -1,0 +1,59 @@
+#titulo {
+    color:blue
+}
+
+p.texto {
+    color:red
+}
+
+p.especial {
+    color:green
+}
+
+div p {
+    color:aquamarine
+}
+
+div h2, div h3 {
+    color:blue
+}
+
+* {
+    font-size: 24px;
+    color: black;
+}
+
+/* Algunos comentarios */
+
+/*
+.color {
+    color: #ff0000;
+}
+
+.color {
+    color: rgb(0, 255, 0);
+}
+*/
+
+.color {
+   /* border: 5px black solid; */
+
+    /*
+    otras alternativas de bordes
+    dotted
+    dashed
+    solid
+    double
+    groove
+    ridge
+    inset
+    outset
+    none
+    hidden
+    */
+
+    border-style: solid;
+    border-color: blue;
+    border-radius: 5px;
+    border-width: 5px;
+}
